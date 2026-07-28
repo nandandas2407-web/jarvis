@@ -35,6 +35,7 @@ jobs:
         run: |
           flutter build apk --release
           mkdir -p dist
+          cp build/app/outputs/flutter-apk/app-release.apk dist/jarvis.apk
           cp build/app/outputs/flutter-apk/app-release.apk dist/app-universal-release.apk
 
       - name: Build architecture-specific APKs
